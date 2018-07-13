@@ -2,7 +2,7 @@ package rekit.mymod.interactinblocks;
 
 public interface IListener {
 	
-	public void act(Reciever a);
+	public void act();
 	
 	public void addReciever(Reciever r);
 	

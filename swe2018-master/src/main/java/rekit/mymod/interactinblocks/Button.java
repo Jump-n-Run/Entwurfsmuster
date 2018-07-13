@@ -4,6 +4,7 @@ import rekit.core.GameGrid;
 import rekit.logic.gameelements.GameElement;
 import rekit.logic.gameelements.GameElementFactory;
 import rekit.logic.gameelements.type.DynamicInanimate;
+import rekit.primitives.geometry.Direction;
 import rekit.primitives.geometry.Vec;
 import rekit.primitives.image.RGBAColor;
 import rekit.util.ReflectUtils.LoadMe;;
@@ -20,12 +21,20 @@ public class Button extends DynamicInanimate implements IListener {
 		super();
 	}
 
+
 	public Button(Vec start) {
 		super(start, new Vec(1), new RGBAColor(0, 0, 0));
 		l = new Listener();
 
 	}
 
+	@Override
+	public void reactToCollision(GameElement element, Direction dir) {
+		if (dir == Direction.UP) {
+			this.act();
+		}
+	}
+	
 	@Override
 	public void internalRender(GameGrid f) {
 		f.drawImage(this.getPos(), this.getSize(), "trinity/button_green_01.png", true, true, false, false);
@@ -38,12 +47,11 @@ public class Button extends DynamicInanimate implements IListener {
 		l.addReciever((Reciever) e);
 		this.getScene().addGameElement(e);
 		return new Button(startPos);
-
 	}
 
 	@Override
-	public void act(Reciever a) {
-		l.act(a);
+	public void act() {
+		l.act();
 	}
 
 	@Override
