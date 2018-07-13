@@ -12,12 +12,14 @@ import rekit.logic.level.LevelFactory;
 import rekit.logic.scene.LevelScene;
 import rekit.mymod.enemies.Pizza;
 import rekit.mymod.enemies.SpriteDummy;
+import rekit.mymod.inanimates.FallBox;
 import rekit.mymod.inanimates.FlyingText;
 import rekit.mymod.inanimates.ParticleDummy;
 import rekit.persistence.level.LevelDefinition;
 import rekit.persistence.level.LevelType;
 import rekit.primitives.geometry.Vec;
 import rekit.util.LambdaUtil;
+import rekit.mymod.interactinblocks.*;
 
 /**
  * A test scene which can be used in {@link GameConf#DEBUG} context.
@@ -81,10 +83,13 @@ public final class MyModScene extends LevelScene {
 		this.addGameElement(new FlyingText(new Vec(36, 2), "SpriteDummy shows how\nto render Sprites"));
 		this.addGameElement(new SpriteDummy(new Vec(36, 5)));
 		
+		this.addGameElement(new Button(new Vec(24, 7.5)));
+		
 		this.addGameElement(new FlyingText(new Vec(48, 2), "ParticleDummy shows how\nto use the\nParticleSpawner"));
 		this.addGameElement(new ParticleDummy(new Vec(48, 5)));
 		
 		this.addGameElement(new FlyingText(new Vec(58, 2), "Enjoy the rest of\nthe level and then\nget started ;)"));
+		
 	}
 	
 	

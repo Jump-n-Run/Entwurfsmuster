@@ -3,7 +3,7 @@ package rekit.mymod.interactinblocks;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Listener {
+public class Listener implements IListener{
 	
 	protected List<Reciever> recievers;
 	
@@ -25,8 +25,8 @@ public abstract class Listener {
 		recievers.remove(r);
 	}
 	
-	public void removeAll(Reciever r) {
-		recievers = new ArrayList<Reciever>();
+	public void removeAll() {
+		recievers.clear();
 	}
 
 }
