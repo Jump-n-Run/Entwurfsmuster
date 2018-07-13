@@ -1,6 +1,7 @@
-package rekit.mymod.inanimates;
+package rekit.mymod.inanimates.states;
 
 import rekit.logic.gameelements.GameElement;
+import rekit.mymod.inanimates.FallBox;
 import rekit.primitives.geometry.Direction;
 import rekit.primitives.geometry.Vec;
 import rekit.primitives.image.RGBAColor;
