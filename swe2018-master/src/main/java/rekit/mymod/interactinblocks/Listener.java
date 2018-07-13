@@ -11,7 +11,7 @@ public class Listener implements IListener{
 		recievers = new ArrayList<Reciever>();
 	}
 	
-	public void act(Reciever a) {
+	public void act() {
 		for(Reciever i: recievers) {
 			i.performAction();
 		}
