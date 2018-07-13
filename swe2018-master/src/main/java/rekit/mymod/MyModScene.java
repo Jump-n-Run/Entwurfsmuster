@@ -8,6 +8,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import rekit.config.GameConf;
 import rekit.logic.GameModel;
 import rekit.logic.ILevelScene;
+import rekit.logic.gameelements.GameElementFactory;
 import rekit.logic.level.LevelFactory;
 import rekit.logic.scene.LevelScene;
 import rekit.mymod.enemies.Pizza;
@@ -59,7 +60,6 @@ public final class MyModScene extends LevelScene {
 	@Override
 	public void start() {
 		super.start();
-				
 		// Adding a GameElement to the scene can be done in two ways:
 		// 1)	Here in this scene, using the constructor
 		//		For develop and debug.

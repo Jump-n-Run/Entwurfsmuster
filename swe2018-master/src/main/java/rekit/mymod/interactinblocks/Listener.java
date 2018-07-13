@@ -3,6 +3,8 @@ package rekit.mymod.interactinblocks;
 import java.util.ArrayList;
 import java.util.List;
 
+import rekit.logic.gameelements.GameElement;
+
 public class Listener implements IListener{
 	
 	protected List<Reciever> recievers;
@@ -17,16 +19,18 @@ public class Listener implements IListener{
 		}
 	}
 	
-	public void addReciever(Reciever r) {
-		recievers.add(r);
-	}
-	
 	public void removeReciever(Reciever r) {
 		recievers.remove(r);
 	}
 	
 	public void removeAll() {
 		recievers.clear();
+	}
+
+	@Override
+	public void addReciever(Reciever r) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
