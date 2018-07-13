@@ -20,7 +20,7 @@ public class Button extends DynamicInanimate implements IListener{
 		super();
 	}
 	
-	public Button(Vec start) {
+	private Button(Vec start) {
 		super(start, new Vec(1), new RGBAColor(0,0,0));
 		l = new Listener();
 		
@@ -41,6 +41,7 @@ public class Button extends DynamicInanimate implements IListener{
 	@Override
 	public DynamicInanimate create(Vec startPos, String... options) {
 		return new Button(startPos);
+		
 	}
 
 	@Override
