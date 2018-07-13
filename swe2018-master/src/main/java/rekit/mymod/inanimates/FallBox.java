@@ -3,6 +3,7 @@ package rekit.mymod.inanimates;
 import rekit.core.GameGrid;
 import rekit.logic.gameelements.GameElement;
 import rekit.logic.gameelements.type.DynamicInanimate;
+import rekit.mymod.inanimates.states.FallBoxState;
 import rekit.mymod.inanimates.states.IdleState;
 import rekit.primitives.geometry.Direction;
 import rekit.primitives.geometry.Polygon;
