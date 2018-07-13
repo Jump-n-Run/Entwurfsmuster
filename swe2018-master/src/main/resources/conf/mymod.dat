@@ -10,6 +10,8 @@
 
 #ALIAS::10->DefaultCoin
 #ALIAS::11->MagicCoin
+#ALIAS::12->Button
+#ALIAS::13->MagicCoin
 
 #ALIAS::20->Pizza
 
