@@ -1,5 +1,7 @@
 package rekit.mymod.interactinblocks;
 
+import rekit.logic.gameelements.GameElement;
+
 public interface IListener {
 	
 	public void act();

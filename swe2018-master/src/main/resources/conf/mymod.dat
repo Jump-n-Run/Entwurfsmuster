@@ -11,7 +11,7 @@
 #ALIAS::10->DefaultCoin
 #ALIAS::11->MagicCoin
 #ALIAS::12->Button
-#ALIAS::13->MagicCoin
+#ALIAS::13->Door
 
 #ALIAS::20->Pizza
 
@@ -24,7 +24,7 @@
 {0	0	0	0	0	0	0 }
 {0	0	0	0	0	0	0 }
 {0	0	0	0	0	0	0 }
-{0	0	0	0	0	0	0 }
+{0	0	12:Door:1:0	0	0	0	0 }
 {1	1	1	1	1	1	1 }
 }
 

@@ -28,9 +28,10 @@ public class Listener implements IListener{
 	}
 
 	@Override
-	public void addReciever(Reciever r) {
+	public void addReciever(Reciever e) {
 		// TODO Auto-generated method stub
 		
 	}
+
 
 }
